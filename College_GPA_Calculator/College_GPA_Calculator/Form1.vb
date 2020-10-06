@@ -1,8 +1,8 @@
 ﻿Public Class Form1
+    'Choosing how many classes to display, defaults to 3 classes
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim numofclasses As Integer
         numofclasses = ComboBox1.Text
-
         Select Case numofclasses
             Case 1
 
@@ -89,6 +89,21 @@
                 CBGrade6.Visible = True
                 TextBox6.Visible = True
         End Select
+    End Sub
+    'Clear All button to clear all textboxes and ComboBoxes
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim X As Control
+        Dim CB As Control
 
+        For Each X In Me.Controls
+            If TypeOf X Is TextBox Then
+                X.Text = ""
+            End If
+        Next
+        For Each CB In Me.Controls
+            If TypeOf CB Is ComboBox Then
+                CB.ResetText()
+            End If
+        Next
     End Sub
 End Class
