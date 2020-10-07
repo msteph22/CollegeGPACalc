@@ -39,6 +39,7 @@ Partial Class Form1
         Me.CBGrade6 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'CBGrade1
@@ -195,11 +196,22 @@ Partial Class Form1
         Me.Button2.Text = "Clear All"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(244, 360)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(112, 43)
+        Me.Label3.TabIndex = 21
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox6)
@@ -241,4 +253,5 @@ Partial Class Form1
     Friend WithEvents CBGrade6 As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label3 As Label
 End Class
