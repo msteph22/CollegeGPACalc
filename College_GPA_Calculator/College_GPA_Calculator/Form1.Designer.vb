@@ -40,20 +40,23 @@ Partial Class Form1
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.TBNote = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'CBGrade1
         '
         Me.CBGrade1.FormattingEnabled = True
         Me.CBGrade1.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
-        Me.CBGrade1.Location = New System.Drawing.Point(176, 124)
+        Me.CBGrade1.Location = New System.Drawing.Point(63, 121)
         Me.CBGrade1.Name = "CBGrade1"
         Me.CBGrade1.Size = New System.Drawing.Size(99, 21)
         Me.CBGrade1.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(456, 190)
+        Me.Button1.Location = New System.Drawing.Point(333, 166)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(99, 31)
         Me.Button1.TabIndex = 1
@@ -62,7 +65,7 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(316, 125)
+        Me.TextBox1.Location = New System.Drawing.Point(203, 122)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(90, 20)
         Me.TextBox1.TabIndex = 2
@@ -70,7 +73,7 @@ Partial Class Form1
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(316, 99)
+        Me.Label1.Location = New System.Drawing.Point(203, 96)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(90, 23)
         Me.Label1.TabIndex = 3
@@ -79,7 +82,7 @@ Partial Class Form1
         '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(176, 98)
+        Me.Label2.Location = New System.Drawing.Point(63, 95)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(99, 23)
         Me.Label2.TabIndex = 4
@@ -90,7 +93,7 @@ Partial Class Form1
         '
         Me.CBGrade2.FormattingEnabled = True
         Me.CBGrade2.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
-        Me.CBGrade2.Location = New System.Drawing.Point(176, 162)
+        Me.CBGrade2.Location = New System.Drawing.Point(63, 159)
         Me.CBGrade2.Name = "CBGrade2"
         Me.CBGrade2.Size = New System.Drawing.Size(99, 21)
         Me.CBGrade2.TabIndex = 5
@@ -99,7 +102,7 @@ Partial Class Form1
         '
         Me.CBGrade3.FormattingEnabled = True
         Me.CBGrade3.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
-        Me.CBGrade3.Location = New System.Drawing.Point(176, 200)
+        Me.CBGrade3.Location = New System.Drawing.Point(63, 197)
         Me.CBGrade3.Name = "CBGrade3"
         Me.CBGrade3.Size = New System.Drawing.Size(99, 21)
         Me.CBGrade3.TabIndex = 6
@@ -108,7 +111,7 @@ Partial Class Form1
         '
         Me.CBGrade4.FormattingEnabled = True
         Me.CBGrade4.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
-        Me.CBGrade4.Location = New System.Drawing.Point(176, 238)
+        Me.CBGrade4.Location = New System.Drawing.Point(63, 235)
         Me.CBGrade4.Name = "CBGrade4"
         Me.CBGrade4.Size = New System.Drawing.Size(99, 21)
         Me.CBGrade4.TabIndex = 7
@@ -116,7 +119,7 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(316, 163)
+        Me.TextBox2.Location = New System.Drawing.Point(203, 160)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(90, 20)
         Me.TextBox2.TabIndex = 8
@@ -124,7 +127,7 @@ Partial Class Form1
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(316, 201)
+        Me.TextBox3.Location = New System.Drawing.Point(203, 198)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(90, 20)
         Me.TextBox3.TabIndex = 9
@@ -132,7 +135,7 @@ Partial Class Form1
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(316, 239)
+        Me.TextBox4.Location = New System.Drawing.Point(203, 236)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(90, 20)
         Me.TextBox4.TabIndex = 10
@@ -141,7 +144,7 @@ Partial Class Form1
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(316, 277)
+        Me.TextBox5.Location = New System.Drawing.Point(203, 274)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(90, 20)
         Me.TextBox5.TabIndex = 14
@@ -152,7 +155,7 @@ Partial Class Form1
         '
         Me.CBGrade5.FormattingEnabled = True
         Me.CBGrade5.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
-        Me.CBGrade5.Location = New System.Drawing.Point(176, 276)
+        Me.CBGrade5.Location = New System.Drawing.Point(63, 273)
         Me.CBGrade5.Name = "CBGrade5"
         Me.CBGrade5.Size = New System.Drawing.Size(99, 21)
         Me.CBGrade5.TabIndex = 13
@@ -160,7 +163,7 @@ Partial Class Form1
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(316, 315)
+        Me.TextBox6.Location = New System.Drawing.Point(203, 312)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(90, 20)
         Me.TextBox6.TabIndex = 17
@@ -171,7 +174,7 @@ Partial Class Form1
         '
         Me.CBGrade6.FormattingEnabled = True
         Me.CBGrade6.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
-        Me.CBGrade6.Location = New System.Drawing.Point(176, 314)
+        Me.CBGrade6.Location = New System.Drawing.Point(63, 311)
         Me.CBGrade6.Name = "CBGrade6"
         Me.CBGrade6.Size = New System.Drawing.Size(99, 21)
         Me.CBGrade6.TabIndex = 16
@@ -181,7 +184,7 @@ Partial Class Form1
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6"})
-        Me.ComboBox1.Location = New System.Drawing.Point(456, 146)
+        Me.ComboBox1.Location = New System.Drawing.Point(333, 122)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(115, 21)
         Me.ComboBox1.TabIndex = 19
@@ -189,7 +192,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(456, 239)
+        Me.Button2.Location = New System.Drawing.Point(333, 215)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(99, 31)
         Me.Button2.TabIndex = 20
@@ -200,17 +203,45 @@ Partial Class Form1
         '
         Me.Label3.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(244, 360)
+        Me.Label3.Location = New System.Drawing.Point(129, 360)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(112, 43)
         Me.Label3.TabIndex = 21
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(497, 121)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(121, 251)
+        Me.ListBox1.TabIndex = 22
+        '
+        'TBNote
+        '
+        Me.TBNote.Location = New System.Drawing.Point(333, 288)
+        Me.TBNote.Multiline = True
+        Me.TBNote.Name = "TBNote"
+        Me.TBNote.Size = New System.Drawing.Size(115, 44)
+        Me.TBNote.TabIndex = 23
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(333, 342)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(115, 30)
+        Me.Button3.TabIndex = 24
+        Me.Button3.Text = "Add Note and Save"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.TBNote)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ComboBox1)
@@ -254,4 +285,7 @@ Partial Class Form1
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents TBNote As TextBox
+    Friend WithEvents Button3 As Button
 End Class

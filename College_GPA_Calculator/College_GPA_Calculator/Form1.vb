@@ -248,4 +248,16 @@
         'Display final gpa in label
         Label3.Text = FinalGPA.ToString("0.00")
     End Sub
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim GPANum, GPANote As String
+        GPANum = Label3.Text
+        GPANote = TBNote.Text
+
+        ListBox1.Items.Add(GPANum & " " & GPANote)
+        TBNote.Clear()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
