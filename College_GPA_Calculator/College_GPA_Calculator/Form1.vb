@@ -256,8 +256,15 @@
         ListBox1.Items.Add(GPANum & " " & GPANote)
         TBNote.Clear()
     End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked = True Then
+            TBNote.Visible = True
+            Button3.Visible = True
+            ListBox1.Visible = True
+        Else
+            TBNote.Visible = False
+            Button3.Visible = False
+            ListBox1.Visible = False
+        End If
     End Sub
 End Class

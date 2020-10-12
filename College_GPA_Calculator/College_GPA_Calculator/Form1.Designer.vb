@@ -43,6 +43,7 @@ Partial Class Form1
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TBNote = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'CBGrade1
@@ -202,6 +203,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(129, 360)
         Me.Label3.Name = "Label3"
@@ -216,6 +218,7 @@ Partial Class Form1
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(121, 251)
         Me.ListBox1.TabIndex = 22
+        Me.ListBox1.Visible = False
         '
         'TBNote
         '
@@ -224,6 +227,7 @@ Partial Class Form1
         Me.TBNote.Name = "TBNote"
         Me.TBNote.Size = New System.Drawing.Size(115, 44)
         Me.TBNote.TabIndex = 23
+        Me.TBNote.Visible = False
         '
         'Button3
         '
@@ -233,12 +237,24 @@ Partial Class Form1
         Me.Button3.TabIndex = 24
         Me.Button3.Text = "Add Note and Save"
         Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Visible = False
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(333, 265)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(90, 17)
+        Me.CheckBox1.TabIndex = 25
+        Me.CheckBox1.Text = "Save Feature"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TBNote)
         Me.Controls.Add(Me.ListBox1)
@@ -288,4 +304,5 @@ Partial Class Form1
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents TBNote As TextBox
     Friend WithEvents Button3 As Button
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
