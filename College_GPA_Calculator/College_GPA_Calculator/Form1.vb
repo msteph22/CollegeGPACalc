@@ -256,15 +256,22 @@
         ListBox1.Items.Add(GPANum & " " & GPANote)
         TBNote.Clear()
     End Sub
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If CheckBox1.Checked = True Then
-            TBNote.Visible = True
-            Button3.Visible = True
-            ListBox1.Visible = True
-        Else
-            TBNote.Visible = False
-            Button3.Visible = False
-            ListBox1.Visible = False
-        End If
+
+
+    Private Sub ToolStripComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ToolStripComboBox1.SelectedIndexChanged
+        Select Case ToolStripComboBox1.SelectedIndex
+            Case 0
+                TBNote.Visible = True
+                Button3.Visible = True
+                ListBox1.Visible = True
+            Case 1
+                TBNote.Visible = False
+                Button3.Visible = False
+                ListBox1.Visible = False
+            Case Else
+                TBNote.Visible = False
+                Button3.Visible = False
+                ListBox1.Visible = False
+        End Select
     End Sub
 End Class
