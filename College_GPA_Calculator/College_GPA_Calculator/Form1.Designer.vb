@@ -44,25 +44,30 @@ Partial Class Form1
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TBNote = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.SaveFeatureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
+        Me.DarkThemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripComboBox2 = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'CBGrade1
         '
+        Me.CBGrade1.BackColor = System.Drawing.Color.White
+        Me.CBGrade1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CBGrade1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBGrade1.FormattingEnabled = True
-        Me.CBGrade1.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
         Me.CBGrade1.Location = New System.Drawing.Point(63, 121)
+        Me.CBGrade1.Margin = New System.Windows.Forms.Padding(0)
         Me.CBGrade1.Name = "CBGrade1"
         Me.CBGrade1.Size = New System.Drawing.Size(99, 21)
         Me.CBGrade1.TabIndex = 0
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(333, 166)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(99, 31)
@@ -72,6 +77,7 @@ Partial Class Form1
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(203, 122)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(90, 20)
@@ -80,6 +86,7 @@ Partial Class Form1
         '
         'Label1
         '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(203, 96)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(90, 23)
@@ -89,6 +96,7 @@ Partial Class Form1
         '
         'Label2
         '
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.Label2.Location = New System.Drawing.Point(63, 95)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(99, 23)
@@ -98,6 +106,10 @@ Partial Class Form1
         '
         'CBGrade2
         '
+        Me.CBGrade2.BackColor = System.Drawing.SystemColors.Window
+        Me.CBGrade2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CBGrade2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CBGrade2.ForeColor = System.Drawing.SystemColors.WindowText
         Me.CBGrade2.FormattingEnabled = True
         Me.CBGrade2.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
         Me.CBGrade2.Location = New System.Drawing.Point(63, 159)
@@ -107,6 +119,8 @@ Partial Class Form1
         '
         'CBGrade3
         '
+        Me.CBGrade3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CBGrade3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBGrade3.FormattingEnabled = True
         Me.CBGrade3.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
         Me.CBGrade3.Location = New System.Drawing.Point(63, 197)
@@ -116,6 +130,8 @@ Partial Class Form1
         '
         'CBGrade4
         '
+        Me.CBGrade4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CBGrade4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBGrade4.FormattingEnabled = True
         Me.CBGrade4.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
         Me.CBGrade4.Location = New System.Drawing.Point(63, 235)
@@ -126,6 +142,7 @@ Partial Class Form1
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(203, 160)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(90, 20)
@@ -134,6 +151,7 @@ Partial Class Form1
         '
         'TextBox3
         '
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(203, 198)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(90, 20)
@@ -142,6 +160,7 @@ Partial Class Form1
         '
         'TextBox4
         '
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(203, 236)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(90, 20)
@@ -151,6 +170,7 @@ Partial Class Form1
         '
         'TextBox5
         '
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(203, 274)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(90, 20)
@@ -160,6 +180,8 @@ Partial Class Form1
         '
         'CBGrade5
         '
+        Me.CBGrade5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CBGrade5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBGrade5.FormattingEnabled = True
         Me.CBGrade5.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
         Me.CBGrade5.Location = New System.Drawing.Point(63, 273)
@@ -170,6 +192,7 @@ Partial Class Form1
         '
         'TextBox6
         '
+        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox6.Location = New System.Drawing.Point(203, 312)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(90, 20)
@@ -179,6 +202,8 @@ Partial Class Form1
         '
         'CBGrade6
         '
+        Me.CBGrade6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CBGrade6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBGrade6.FormattingEnabled = True
         Me.CBGrade6.Items.AddRange(New Object() {"A", "B", "C", "D", "F"})
         Me.CBGrade6.Location = New System.Drawing.Point(63, 311)
@@ -189,11 +214,13 @@ Partial Class Form1
         '
         'ComboBox1
         '
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6"})
         Me.ComboBox1.Location = New System.Drawing.Point(333, 122)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(115, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(129, 21)
         Me.ComboBox1.TabIndex = 19
         Me.ComboBox1.Text = "Number of Classes"
         '
@@ -245,16 +272,6 @@ Partial Class Form1
         Me.Button3.UseVisualStyleBackColor = True
         Me.Button3.Visible = False
         '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(333, 265)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(90, 17)
-        Me.CheckBox1.TabIndex = 25
-        Me.CheckBox1.Text = "Save Feature"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'ToolStrip1
         '
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton1})
@@ -267,7 +284,7 @@ Partial Class Form1
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveFeatureToolStripMenuItem})
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveFeatureToolStripMenuItem, Me.DarkThemeToolStripMenuItem})
         Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
@@ -278,22 +295,37 @@ Partial Class Form1
         '
         Me.SaveFeatureToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripComboBox1})
         Me.SaveFeatureToolStripMenuItem.Name = "SaveFeatureToolStripMenuItem"
-        Me.SaveFeatureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SaveFeatureToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.SaveFeatureToolStripMenuItem.Text = "Save Feature"
         '
         'ToolStripComboBox1
         '
-        Me.ToolStripComboBox1.Items.AddRange(New Object() {"Save Feature Visble", "Save Feature Hidden"})
+        Me.ToolStripComboBox1.Items.AddRange(New Object() {"Visble", "Hidden"})
         Me.ToolStripComboBox1.Name = "ToolStripComboBox1"
         Me.ToolStripComboBox1.Size = New System.Drawing.Size(121, 23)
+        Me.ToolStripComboBox1.Text = "Hidden"
+        '
+        'DarkThemeToolStripMenuItem
+        '
+        Me.DarkThemeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripComboBox2})
+        Me.DarkThemeToolStripMenuItem.Name = "DarkThemeToolStripMenuItem"
+        Me.DarkThemeToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.DarkThemeToolStripMenuItem.Text = "Dark Theme"
+        '
+        'ToolStripComboBox2
+        '
+        Me.ToolStripComboBox2.Items.AddRange(New Object() {"Disabled", "Enabled"})
+        Me.ToolStripComboBox2.Name = "ToolStripComboBox2"
+        Me.ToolStripComboBox2.Size = New System.Drawing.Size(121, 23)
+        Me.ToolStripComboBox2.Text = "Disabled"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TBNote)
         Me.Controls.Add(Me.ListBox1)
@@ -315,6 +347,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CBGrade1)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ToolStrip1.ResumeLayout(False)
@@ -323,8 +356,6 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents CBGrade1 As ComboBox
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
@@ -345,9 +376,11 @@ Partial Class Form1
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents TBNote As TextBox
     Friend WithEvents Button3 As Button
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
     Friend WithEvents SaveFeatureToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripComboBox1 As ToolStripComboBox
+    Friend WithEvents DarkThemeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripComboBox2 As ToolStripComboBox
+    Friend WithEvents CBGrade1 As ComboBox
 End Class

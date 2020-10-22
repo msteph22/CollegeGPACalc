@@ -256,8 +256,7 @@
         ListBox1.Items.Add(GPANum & " " & GPANote)
         TBNote.Clear()
     End Sub
-
-
+    'Show/Hide Combobox for save feature
     Private Sub ToolStripComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ToolStripComboBox1.SelectedIndexChanged
         Select Case ToolStripComboBox1.SelectedIndex
             Case 0
@@ -272,6 +271,51 @@
                 TBNote.Visible = False
                 Button3.Visible = False
                 ListBox1.Visible = False
+        End Select
+    End Sub
+
+    Private Sub ToolStripComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ToolStripComboBox2.SelectedIndexChanged
+        Select Case ToolStripComboBox2.SelectedIndex
+            Case 0
+                BackColor = Color.WhiteSmoke
+                Dim CB As Control
+                For Each CB In Me.Controls
+                    If TypeOf CB Is ComboBox Then
+                        CB.BackColor = Color.White
+                        CB.ForeColor = Color.Black
+                    End If
+                    If TypeOf CB Is TextBox Then
+                        CB.BackColor = Color.White
+                        CB.ForeColor = Color.Black
+                    End If
+                    If TypeOf CB Is Label Then
+                        CB.ForeColor = Color.Black
+                    End If
+                Next
+            Case 1
+                BackColor = Color.DimGray 'Sets form color
+                Dim CB As Control
+                For Each CB In Me.Controls
+                    If TypeOf CB Is ComboBox Then
+                        CB.BackColor = Color.DarkGray
+                        CB.ForeColor = Color.White
+                    End If
+                    If TypeOf CB Is TextBox Then
+                        CB.BackColor = Color.DarkGray
+                        CB.ForeColor = Color.White
+                    End If
+                    If TypeOf CB Is Label Then
+                        CB.ForeColor = Color.White
+                    End If
+                Next
+            Case Else
+                BackColor = Color.WhiteSmoke
+                Dim CB As Control
+                For Each CB In Me.Controls
+                    If TypeOf CB Is ComboBox Then
+                        CB.BackColor = Color.WhiteSmoke
+                    End If
+                Next
         End Select
     End Sub
 End Class
